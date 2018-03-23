@@ -6,20 +6,25 @@
   }
 </style>
 <template>
-    <div class="main">
-      首页2312312
-    </div>
+  <div class="main">
+    <!--<iframe height=498 width=510 src='http://player.youku.com/embed/XMzQ3MzAwMDk4OA==' frameborder='0' allowfullscreen></iframe>-->
+
+  </div>
 </template>
 
 <script>
-    export default {
-        name: '',
-        data () {
-            return {}
-        }, created(){
+  export default {
+    name: '',
+    data () {
+      return {
 
-        }, mounted(){
+      }
+    }, created(){
 
-        }, methods: {}
+    }, mounted(){
+
+    }, methods: {
+
     }
+  }
 </script>
