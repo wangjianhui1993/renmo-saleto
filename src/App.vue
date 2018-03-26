@@ -19,4 +19,5 @@
     height: 100%;
     background: black;
   }
+  a {color: black;}
 </style>
