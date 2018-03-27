@@ -52,19 +52,40 @@
   }
 
   .ct{ width: 1200px;height: 1200px;}
+  .video-width{
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 5%;
+    background: white;
+  }
 
 </style>
 <template>
   <div>
     <tostbg v-if="tost" @up="change" :msg="msg" :child-msg="msg2"></tostbg>
     <div class="main">
-      <div class="content">
-        <div class="demos" v-for="(item,index) in demos" @click="tosts(index)">
-          <div class="demo-title">{{item.title}}</div>
-          <div class="demos-img"><img :src='item.pgimg'></div>
-          <div class="demo-tool">{{item.title}}</div>
-        </div>
-      </div>
+
+     <div class="video-width" v-for="(item,index) in demos" @click="tosts(index)">
+         <div class="demo-title">{{item.title}}</div>
+         <div class="demos-img"><img :src='item.pgimg'></div>
+         <div class="demo-tool">{{item.title}}</div>
+
+     </div>
+
+
+      <!--<div class="content">-->
+        <!--<div class="demos" v-for="(item,index) in demos" @click="tosts(index)">-->
+          <!--<div class="demo-title">{{item.title}}</div>-->
+          <!--<div class="demos-img"><img :src='item.pgimg'></div>-->
+          <!--<div class="demo-tool">{{item.title}}</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="demos">-->
+        <!--<div class="demo-title">测试数据</div>-->
+        <!--<div class="demos-img"><img src='./static/yun.jpg'></div>-->
+        <!--<div class="demo-tool"></div>-->
+      <!--</div>-->
       <div class="content" style="height: 100px;float: left;"></div>
     </div>
   </div>
@@ -77,15 +98,15 @@
     data () {
       return {
         demos:[
-          {title:'AWSome Day 云计算技术课堂',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：亚马逊、云计算、邀请函、AWS',link:'http://xps.utuiwu.com/aws/index.html'},
-          {title:'熊孩子别跑',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/beibei/index.html'},
-          {title:'从前有座山',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：从前',link:'http://xps.utuiwu.com/binbin/chengguang/index.html'},
-          {title:'和信贷',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/binbin/hexindai/index.html'},
-          {title:'一气沈阳',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/binbin/yiqig/index.html'},
-          {title:'一气广州',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/binbin/yiqis/index.html'},
-          {title:'京东便民',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/binbin/bianming/index.html'},
-          {title:'雀巢咖啡',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：熊孩子',link:'http://jtest.i-h5.cn/Nestle/index.html'},
-          {title:'老司机驾照',pgimg:'/static/img/yun.147149e.jpg',tool:'标签：熊孩子',link:'http://www.weilaiclass.com/game/laosiji/index.html'}
+          {title:'AWSome Day 云计算技术课堂',pgimg:'./static/yun.jpg',tool:'标签：亚马逊、云计算、邀请函、AWS',link:'http://xps.utuiwu.com/aws/index.html'},
+          {title:'熊孩子别跑',pgimg:'./static/yun.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/beibei/index.html'},
+          {title:'从前有座山',pgimg:'./static/yun.jpg',tool:'标签：从前',link:'http://xps.utuiwu.com/binbin/chengguang/index.html'},
+          {title:'和信贷',pgimg:'./static/yun.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/binbin/hexindai/index.html'},
+          {title:'一气沈阳',pgimg:'./static/yun.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/binbin/yiqig/index.html'},
+          {title:'一气广州',pgimg:'./static/yun.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/binbin/yiqis/index.html'},
+          {title:'京东便民',pgimg:'./static/yun.jpg',tool:'标签：熊孩子',link:'http://xps.utuiwu.com/binbin/bianming/index.html'},
+          {title:'雀巢咖啡',pgimg:'./static/yun.jpg',tool:'标签：熊孩子',link:'http://jtest.i-h5.cn/Nestle/index.html'},
+          {title:'老司机驾照',pgimg:'./static/yun.jpg',tool:'标签：熊孩子',link:'http://www.weilaiclass.com/game/laosiji/index.html'}
         ],
         tost:false,
         msg:'',

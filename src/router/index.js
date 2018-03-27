@@ -18,10 +18,17 @@ import video from '@/views/video'
 import vr from '@/views/vr'
 import index2 from '@/views/index2'
 
+import zsy from '@/components/zsy'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    //{
+    //  path:'/',
+    //  redirect:'/zsy',
+    //  component: zsy
+    //},
     {
       path:'/',
       redirect:'/index2',

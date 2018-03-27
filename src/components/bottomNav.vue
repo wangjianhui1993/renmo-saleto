@@ -7,6 +7,7 @@
     bottom: 0px;
     left: 100px;
     background: white;
+    opacity: 0.8;
 
   }
 
